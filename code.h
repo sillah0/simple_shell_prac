@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <string.h>
 
-eternal char **environ;
+extern char **environ;
 typedef struct {
     int status;
     int err_num;
