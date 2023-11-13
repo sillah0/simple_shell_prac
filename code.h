@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <string.h>
 
+eternal char **environ;
 typedef struct {
     int status;
     int err_num;
@@ -13,5 +14,5 @@ typedef struct {
 }info_t;
 
 int _myexit(info_t *shell);
-
+void print_env(char **new_argv);
 #endif /*CODE_H*/
